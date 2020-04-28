@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>@yield('titulo','Sistema Acadêmico')</title>
+  <title>@yield('titulo','Portal do Candidato')</title>
+ 
 
 
   {{-- Link do Bootstrap --}}
@@ -20,7 +21,7 @@
   Pagina principal da aplicação --}}
   <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
+      <div class="bg-light p-4">
         <ul class="nav navbar-nav navbar-right">
           <!-- Image and text -->
           <nav class="navbar navbar-light bg-light">
@@ -29,9 +30,10 @@
               Home</a>
       
               <nav class="navbar navbar-inverse">
+
                 <div class="container-fluid">
                  
-                  <div class="btn-group" role="group" aria-label="Button group with nested dropdown" style ="width: 20px;">
+                  <div class="btn-group" role="group" aria-label="Button group with nested dropdown" style ="width: -10px;">
                     <div class="btn-group" role="group">
                       <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Midias sociais
@@ -65,6 +67,9 @@
                               Flickr</a>
                           
                       </div>
+
+
+                      
                     </div>
                   </div>
                   
@@ -73,29 +78,31 @@
                   
                   
                 </div>
-              </nav>
-
-
-
-            <a class="navbar-brand" href="{{ route('login') }}">
-              <img src="img/imageLogin.png" width="30" height="30" class="d-inline-block align-top" alt="">
-              Login</a>
-        
-              <a class="navbar-brand" href="{{ route('register') }}">
-              <img src="img/imagemRegistrar.png" width="30" height="30" class="d-inline-block align-top" alt="">
-              Registrar conta</a>
+              </nav>   
             </nav>
       </div>
     </div>
     
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-light bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <a class="navbar-brand" href="{{ route('login') }}">
+        <img src="img/imagemRegistrar.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Meu Perfil</a>
+
+      <a class="navbar-brand" href="{{ route('login') }}">
+              <img src="img/imageLogin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              Login</a>
+        
+              <a class="navbar-brand" href="{{ route('register') }}">
+              <img src="img/imagemPerfil.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              Registrar conta</a>
+
+              
     </nav>
   </div>
-  
-
 
 </head>
 
@@ -113,17 +120,10 @@
   <div class="ml-10">
     <ul class="nav nav-tabs">
 
-
-      <li class="nav-item">
-        <a href="/areaGeral"class="btn btn-primary">Area Geral</button></a>
-      </li>
-      <li class="nav-item">
-        <a href="/areaClientes"class="btn btn-primary">Area do cliente</button></a>
-      </li>
-
-      <li class="nav-item">
-        <a href="/areaAdministra" class="btn btn-primary">Area administrativa</button></a>
-      </li>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
 
     
       </div>
@@ -133,7 +133,7 @@
 
 
     <div class="jumbotron text-center">
-      <h1>Transações Financeiras</h1>
+      <h1>Portal do candidato</h1>
        </div>
 
        
