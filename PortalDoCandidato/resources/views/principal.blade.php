@@ -25,6 +25,7 @@
         <ul class="nav navbar-nav navbar-right">
           <!-- Image and text -->
           <nav class="navbar navbar-light bg-light">
+
             <a class="navbar-brand" href="{{ url('/home') }}">
               <img src="img/ImagemHome.png" width="30" height="30" class="d-inline-block align-top" alt="">
               Home</a>
@@ -88,6 +89,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <a class="navbar-brand" href="{{ url('/') }}">
+        <img src="img/ImagemBioextratus.png" width="130" height="50" class="d-inline-block align-top" alt="">
+        </a>
+
       <a class="navbar-brand" href="{{ route('login') }}">
         <img src="img/imagemRegistrar.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Meu Perfil</a>
@@ -116,8 +121,14 @@
   @if(Session::has('mensagem'))
     <p><strong>{{ Session::get('mensagem') }}</strong></p>
   @endif
+ 
+  <div class="container">
+</div>
 
-  <div class="ml-10">
+
+
+
+  {{-- <div class="ml-10">
     <ul class="nav nav-tabs">
 
       <form class="form-inline my-2 my-lg-0">
@@ -127,14 +138,8 @@
 
     
       </div>
-  
+   --}}
 
-
-
-
-    <div class="jumbotron text-center">
-      <h1>Portal do candidato</h1>
-       </div>
 
        
        
@@ -145,22 +150,43 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            
           </ol>
           <div class="carousel-inner">
+            
             <div class="carousel-item active">
+              <a href="https://loja.bioextratus.com.br">
               <img class="d-block w-100" src="img/bg--bioextratus.jpg" alt="Primeiro Slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Bio Extratus Cosmetic Natural LTDA</h1>
+                <h5>Seja também um de nossos colaboradores!!!</h5>
+              </div>
+              </a>
+            </div>
+         
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/siteBioextratus.jpg" alt="Segundo Slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Bio Extratus Cosmetic Natural LTDA</h1>
+                <h5>Seja também um de nossos colaboradores!!!</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/ImagemVisaoAmpla.jpg" alt="Terceiro Slide">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Imagem Via Satelite</h5>
                 <p>Primeira imagem</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/siteBioextratus.jpg" alt="Segundo Slide">
+              <img class="d-block w-100" src="img/ImagemEstrutura.jpg" alt="Terceiro Slide">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Imagem Via Satelite</h5>
+                <h5>Imagem Estrutura</h5>
                 <p>Primeira imagem</p>
               </div>
             </div>
+
   
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -172,9 +198,22 @@
           </a>
         </div>
       </div>
-      
     </div>
+
+
+    <section class="section text-center" style="background: #f9f9f9">
+      <div class="container">
+        <h1>Sobre nós</h1>
+        <br>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <p>
+            </p><p style="margin: 0px 0px 10px; text-align: justify; color: rgba(38, 38, 38, 0.8); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: open_sansregular, sans-serif; font-size: 15px; font-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><span style="margin: 2px 0px 10px; color: rgb(51, 153, 102); font-family: open_sansregular, sans-serif; text-decoration: none;"><strong style="margin: 0px; font-family: open_sansregular, sans-serif; font-weight: 700; text-decoration: none;">NOSSA RECEITA DE SUCESSO</strong></span><br style="margin: 0px; font-family: open_sansregular, sans-serif; text-decoration: none;">“Os nossos preciosos ingredientes são as pessoas que compõem a nossa empresa, funcionários, distribuidores e clientes. A relação honesta, bem sucedida e prazerosa que se estabeleceu entre a empresa e todos que a cercam e torna a Bio Extratus uma marca sólida, que continua sonhando e ousando para atingir as suas metas, com um enorme compromisso social e respeito ao meio-ambiente.”</p><p><br></p><p style="margin: 0px 0px 10px; text-align: justify; color: rgba(38, 38, 38, 0.8); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: open_sansregular, sans-serif; font-size: 15px; font-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><span style="margin: 2px 0px 10px; color: rgb(51, 153, 102); font-family: open_sansregular, sans-serif; text-decoration: none;"><strong style="margin: 0px; font-family: open_sansregular, sans-serif; font-weight: 700; text-decoration: none;">NOSSO MUITO OBRIGADO</strong></span><br style="margin: 0px; font-family: open_sansregular, sans-serif; text-decoration: none;">Pelo companheirismo, dedicação e vontade de vencer a cada dia, gostaríamos de agradecer a todos que nos cercam. Sem vocês, o sonho não se tornaria realidade.</p><p><br></p>      <p></p>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
     
+    </section>
    
 
 
