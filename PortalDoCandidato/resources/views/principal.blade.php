@@ -140,8 +140,7 @@
     <p><strong>{{ Session::get('mensagem') }}</strong></p>
   @endif
  
-  <div class="container">
-</div>  
+
      
          <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -152,7 +151,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             
           </ol>
-          <div class="carousel-inner">
+          <div class="carousel-inner ">
             
             <div class="carousel-item active">
               <a href="https://loja.bioextratus.com.br">
@@ -202,9 +201,9 @@
 
 
 
-    <div class = "container">
+    <div class = "container mr-2 ml-4">
       <div class ="row">
-        <div class="col" style="width: -10px">
+        <div class="col" style="width: 10px">
           <section class="section text-center" style="background: #f9f9f9">
             <div class="container">
               <h1>Sobre nós</h1>
@@ -221,28 +220,72 @@
         </div>
 
         <div class="col">
+          <h1>Vagas abertas</h1>
+          {{-- Tipo acocordin --}}
           <div id="accordion">
+            
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Collapsible Group Item #1
-                  </button>
+                  <h4> 
+                    <a href="/">
+                      <span class="badge badge-light" >Vaga 1...</span> 
+                  </a>
+                  <nav class="navbar navbar-nav">
+                    <ul class ="ml-auto">
+
+                       <a class="ml-4" href="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <span class="badge badge-success " >Visualizar</span> 
+                    </a>
+
+                    <a class="ml-4"href="/">
+                     <span class="badge badge-success " >Cadastrar</span> 
+                 </a>
+                 
+                 <a class="ml-4"href="/">
+                  <img src="img/ImagemEmail.jpg" width="70" height="40" class="d-inline-block align-top" alt="">
+ 
+              </a>
+              </ul>
+                  </nav>
+                </h4>
+               
                 </h5>
               </div>
-          
+             
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                 </div>
               </div>
             </div>
+
+
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Collapsible Group Item #2
-                  </button>
+                    <h4> 
+                    <a href="/">
+                      <span class="badge badge-light" >Vaga 2...</span> 
+                  </a>
+                  <nav class="navbar navbar-nav">
+                    <ul class ="ml-auto">
+
+                       <a class="ml-4" href="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="badge badge-success " >Visualizar</span> 
+                    </a>
+
+                    <a class="ml-4"href="/">
+                     <span class="badge badge-success " >Cadastrar</span> 
+                 </a>
+                 
+                 <a class="ml-4"href="/">
+                  <img src="img/ImagemEmail.jpg" width="70" height="40" class="d-inline-block align-top" alt="">
+ 
+              </a>
+              </ul>
+                  </nav>
+                </h4>
                 </h5>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -254,8 +297,106 @@
             <div class="card">
               <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
+                  <h4> 
+                    <a href="/">
+                      <span class="badge badge-light" >Vaga 3...</span> 
+                  </a>
+                  <nav class="navbar navbar-nav">
+                    <ul class ="ml-auto">
+
+                       <a class="ml-4" href="" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="badge badge-success " >Visualizar</span> 
+                    </a>
+
+                    <a class="ml-4"href="/">
+                     <span class="badge badge-success " >Cadastrar</span> 
+                 </a>
+                 
+                 <a class="ml-4"href="/">
+                  <img src="img/ImagemEmail.jpg" width="70" height="40" class="d-inline-block align-top" alt="">
+ 
+              </a>
+              </ul>
+                  </nav>
+                </h4>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <h4> 
+                    <a href="/">
+                      <span class="badge badge-light" >Vaga 4...</span> 
+                  </a>
+                  <nav class="navbar navbar-nav">
+                    <ul class ="ml-auto">
+
+                       <a class="ml-4" href="" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <span class="badge badge-success " >Visualizar</span> 
+                    </a>
+
+                    <a class="ml-4"href="/">
+                     <span class="badge badge-success " >Cadastrar</span> 
+                 </a>
+                 
+                 <a class="ml-4"href="/">
+                  <img src="img/ImagemEmail.jpg" width="70" height="40" class="d-inline-block align-top" alt="">
+ 
+              </a>
+              </ul>
+                  </nav>
+                </h4>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Collapsible Group Item #3
+                   Vaga 5...
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Vaga 6...
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Vaga 7...
                   </button>
                 </h5>
               </div>
@@ -267,13 +408,13 @@
             </div>
           </div>
 
-        </div>
-
-        <div class="col">
-          222
-        </div>
+        
       </div>
     </div>
+    </div>
+
+
+   
     
 
 
