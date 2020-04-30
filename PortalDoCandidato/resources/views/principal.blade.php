@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/principal.css">
+   <link rel="stylesheet" href="css/redes.css">
 
   {{-- Link do Js --}}
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -22,21 +23,44 @@
   {{--
     Pagina principal da aplicação --}}
     <div class="pos-f-t">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-light p-4">
-          <ul class="nav navbar-nav navbar-right">
-            <!-- Image and text -->
-            <nav class="navbar navbar-light bg-light">
+  
 
-              <a class="navbar-brand" href="{{ url('/home') }}">
-                <img src="img/ImagemHome.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                Home</a>
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-                <nav class="navbar navbar-inverse">
+                         
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-                  <div class="container-fluid">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+                          <a class="navbar-brand" href="{{ url('/') }}">
+                            <img src="img/ImagemBioextratus.png" width="130" height="50" class="d-inline-block align-top" alt="">
+                          </a>
+                           </li>
+    </ul>
 
-                    <ul class ="navbar-nav ml-auto">
+
+                          <ul class="navbar-nav ml-auto">
+                            <a class="navbar-brand " href="{{ route('login') }}">
+                              <img src="img/imagemRegistrar.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">
+                              Meu Perfil</a>
+                            </ul>
+
+
+                            <a class="navbar-brand" href="{{ route('login') }}">
+                              <img src="img/imageLogin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                              Login</a>
+
+
+
+                              <a class="navbar-brand" href="{{ route('register') }}">
+                                <img src="img/imagemPerfil.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                                Registrar conta</a>
+                              </ul>
+
+                               <ul class ="navbar-nav ml-auto">
 
                       <div class="btn-group" role="group" aria-label="Button group with nested dropdown" style ="width: -40px;">
                         <div class="btn-group" role="group">
@@ -85,47 +109,6 @@
 
                                     </div>
                                   </ul>
-
-
-
-
-                                </div>
-                              </nav>
-                            </nav>
-                          </div>
-                        </div>
-
-                        <nav class="navbar navbar-light bg-light ml- auto">
-
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-
-
-                          <a class="navbar-brand" href="{{ url('/') }}">
-                            <img src="img/ImagemBioextratus.png" width="130" height="50" class="d-inline-block align-top" alt="">
-                          </a>
-
-
-                          <ul class="navbar-nav ml-auto">
-                            <a class="navbar-brand " href="{{ route('login') }}">
-                              <img src="img/imagemRegistrar.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">
-                              Meu Perfil</a>
-                            </ul>
-
-
-                            <a class="navbar-brand" href="{{ route('login') }}">
-                              <img src="img/imageLogin.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                              Login</a>
-
-
-
-                              <a class="navbar-brand" href="{{ route('register') }}">
-                                <img src="img/imagemPerfil.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                                Registrar conta</a>
-
-
-                              </ul>
                             </nav>
                           </div>
 
@@ -422,7 +405,7 @@
                                   </div>
 
                                   <div class="col-xs-6 col-md-3">
-                                    <h6>Quick Links</h6>
+                                    <h6>Fale conosco</h6>
                                     <ul class="footer-links">
                                       <li><a href="http://scanfcode.com/about/">About Us</a></li>
                                       <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
@@ -437,17 +420,23 @@
                               <div class="container">
                                 <div class="row">
                                   <div class="col-md-8 col-sm-6 col-xs-12">
-                                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                                      <a href="#">Scanfcode</a>.
+                                    <p class="copyright-text">Copyright &copy; 2020 Todos os direitos são reservados à Bioextratus Cosmetics Natural
+                                      <a href="https:https://loja.bioextratus.com.br">Site Oficial</a>.
                                     </p>
                                   </div>
 
                                   <div class="col-md-4 col-sm-6 col-xs-12">
                                     <ul class="social-icons">
-                                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                      <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                                      <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                      <li><a class="facebook" href="https://www.facebook.com/bioextratus/"><i class="fa fa-facebook"></i>
+                                      <img  class ="redesimg" src="img/ImagemFacebook.jpg"></a></li>
+                                      <li><a class="twitter" href="https://www.linkedin.com/in/bio-extratus-cosmetic-natural-ltda-918900159/"><i class="fa fa-linkedin"></i>
+                                      <img class="redesimg" src="img/ImagemLinkedin.jpg"></a></li>
+                                      <li><a class="dribbble" href="https://www.instagram.com/bioextratus/?hl=pt-br"><i class="fa fa-instagram"></i>
+                                      <img class ="redesimg"src="img/ImagemInstagram.jpg" ></a></li>
+                                      <li><a class="youtube" href="https://www.youtube.com/bioextratusoficial"><i class="fa fa-youtube"></i>
+                                      <img class="redesimg"src="img/ImagemYoutube.png"></a></li>
+                                      <li><a class="flickr" href="https://www.flickr.com/photos/bioextratus/"><i class="fa fa-flickr"></i>
+                                      <img class="redesimg"src="img/ImagemFlicker.png"></a></li>
                                     </ul>
                                   </div>
                                 </div>
