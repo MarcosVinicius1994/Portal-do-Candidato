@@ -32,8 +32,16 @@ $(function () {
 });
 
 $(function () {
-    $(".CorcadastrarID").click(function () {
-        window.document.getElementsByClassName("CorcadastrarID").style.background = "#00BFFF";
-        // window.document.getElementById("CorcadastrarID").style.color = "#00BFFF";
+    $("#IDcadastrar").click(function () {
+        window.document.getElementsByTagName("idcadastrar").style.background = "#00BFFF";
+
+    });
+});
+
+
+$(function () {
+    $("#IdBuscar").click(function () {
+        window.document.getElementById("IdBuscar").style.background = "#00BFFF";
+        // window.document.getElementById("IdBuscar").style.color = "#00BFFF";
     });
 });

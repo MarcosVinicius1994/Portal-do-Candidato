@@ -53,8 +53,9 @@
 
              <button type="button" class="btn btn-light" id="ImageMeuLog">
             <a class="navbar-brand" href="{{ route('login') }}">
-              <img src="img/imageLogin.png" width="30" height="30" class="d-inline-block align-top" id="ImageLogin">
-              Login</a>
+              {{-- <img src="img/imageLogin.png" width="30" height="30" class="d-inline-block align-top" id="ImageLogin"> --}}
+            <img src="/open-iconic/svg/account-login.svg">Login 
+            </a>
              </button>
             
 
@@ -192,8 +193,8 @@
                         <ul>
 
                           <form class="form-inline mr-auto">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-unique btn-rounded btn-sm my-0" type="submit">Search</button>
+                            <input class="form-control mr-sm-2" type="text" placeholder="" aria-label="Search">
+                            <button class="btn btn-dark btn-rounded btn-sm my-0" type="submit" id ="IdBuscar">Buscar</button>
                           </form>
                         </ul>
                         <div id="accordion">
@@ -215,7 +216,7 @@
                                     </button>
 
                                     
-                                      <a class="btn btn-info ml-4" role="button" href="/" id="CorcadastrarID">
+                                      <a name= "idcadastrar"class="btn btn-info ml-4" role="button" href="/"id="IDcadastrar">
                                         Cadastrar</a>
                                       
                                       
@@ -266,7 +267,7 @@
                                     </button>
 
                                    
-                                        <a class="CorcadastrarID btn btn-info  ml-4" role="button" href="/">
+                                        <a name= "idcadastrar" class="btn btn-info  ml-4" role="button" href="/"id="IDcadastrar">
                                         Cadastrar
                                         </a>
                                   
@@ -305,7 +306,7 @@
                                     </button>
 
                                      
-                                        <a class="CorcadastrarID btn btn-info ml-4" role="button" href="/">
+                                        <a name= "idcadastrar" class="btn btn-info ml-4" role="button" href="/"id="IDcadastrar">
                                         Cadastrar
                                         </a>
                                      
@@ -329,47 +330,7 @@
                               </div>
                             </div>
 
-                            <div class="card">
-                              <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                  <h4>
-                                    <a href="/">
-                                      <span class="badge badge-light" >Vaga 4...</span>
-                                    </a>
-                                    <nav class="navbar navbar-nav">
-                                      <ul class ="ml-auto">
-
-                                       <button type="button" class="btn btn-info">
-                                      <a class="ml-1"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Visualizar
-                                      </a>
-                                    </button>
-
-                                     
-                                        <a class="CorcadastrarID btn btn-info ml-4" role="button"href="/">
-                                          Cadastrar
-                                        </a>
-                                    
-
-                                        <a class="ml-4"href="/">
-                                          <img src="img/ImagemEmail.jpg" width="70" height="40" class="d-inline-block align-top" alt="">
-
-                                        </a>
-                                      </ul>
-                                    </nav>
-                                    <span class="badge badge-light " >Alvinopolis -MG
-                                      <img src="img/ImagemLocalizacao.png" width="70" height="40" class="d-inline-block align-top" alt="">
-                                    </span>
-                                  </h4>
-
-                                </h5>
-                              </div>
-                              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                <div class="card-body">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                              </div>
-                            </div>
+                          
 
                           </div>
                         </div>
