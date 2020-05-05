@@ -4,9 +4,9 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col">
             <div class="card">
-                 <div class="col-12 user-img">
+                 <div class="col-12 user-img" id="col_Login">
                                 <img src="img/ImagemUsuario.png" alt=""width="100" height="100" class="d-inline-block align-top">
                             </div>
                 <div class="card-header">{{ __('Login') }}</div>
