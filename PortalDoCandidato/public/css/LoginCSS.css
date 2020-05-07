@@ -1,0 +1,45 @@
+#IDcontainer {
+    background-color: green;
+
+}
+
+
+#TamEnvelope {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+}
+
+#TamChave {
+    font-size: 25px;
+}
+
+
+#ImagemUsuario {
+    text-justify: center;
+    border-radius: 100%;
+
+
+}
+
+#BodyID {
+    background-color: aliceblue;
+    font-size: 15;
+    justify-content: center;
+    width: 400px;
+    border-radius: 75%;
+
+}
+
+#CabecalhoBody {
+    background-color: aliceblue;
+    font-size: ;
+    width: 400px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 65pxpx;
+    justify-self: center;
+    margin-right: -4;
+    border-radius: 18%;
+
+}
