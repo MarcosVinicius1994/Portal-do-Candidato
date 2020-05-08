@@ -23,7 +23,7 @@
 </head>
 <body background="img/ImagemEstrutura.jpg">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="img/ImagemBioextratus.png" width="160" height="50" alt="">
@@ -48,17 +48,44 @@
 
                             <ul>
                            
-                                <a class="btn btn-primary" href="/">
+                                <a class="btn btn-primary mt-2" href="/">
                                 <span class="fas fa-home"></span></a>
                            
                         </ul>
                             @if (Route::has('register'))
                             <ul class ="ml-4">
                               
-                                    <a class="btn btn-primary" href="/">
+                                    <a class="btn btn-primary mt-2" href="{{ route('register') }}">
                                     <span class="fas fa-user-plus px-2">
                                    </span></a>
                                 </ul>
+  
+                                <ul>
+                                    <div class="btn-group ml-4 mt--5" role="group" aria-label="Button group with nested dropdown" style ="width: -40px;">
+                  <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="img/ImagemBrasil.png" width="40" height="30" class="d-inline-block align-top" alt="">
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+
+
+                      <a class="dropdown-item" href="">
+                        <img src="img/ImagemBrasil.png" role ="button" width="40" height="30" class="d-inline-block align-top" alt=""></a>
+
+                        <a class="dropdown-item" href="">
+                          <img src="img/ImagemEspanha.jpg" role ="button" width="40" height="30" class="d-inline-block align-top" alt=""></a>
+
+                          <a class="dropdown-item" href="">
+                            <img src="img/ImagemIngles.jpg" role ="button" width="40" height="30" class="d-inline-block align-top" alt=""></a>
+
+
+                          </div>
+                        </div>
+                      </div>
+                                </ul>
+
+
                             @endif
                         @else
                             <li class="nav-item dropdown">
@@ -84,9 +111,8 @@
             </div>
         </nav>
 
-        <main class="py-4">
+       
             @yield('content')
-        </main>
     </div>
 </body>
 </html>

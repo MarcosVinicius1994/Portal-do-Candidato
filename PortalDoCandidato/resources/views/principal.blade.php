@@ -8,10 +8,11 @@
 
 
   {{-- Link do Bootstrap --}}
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  
 <link rel="stylesheet" href="css/principal.css">
   <link rel="stylesheet" href="css/redes.css">
 
@@ -49,7 +50,7 @@
          
         <ul class="navbar-nav ml-auto">
           <button type="button" class="btn btn-light"  id="ImageMeuPerf">
-          <a class="btn btn-success" href="{{ route('login') }}">
+          <a class="btn btn-primary btn-sm" href="{{ route('login') }}">
             {{-- <img src="img/imagemRegistrar.png" width="30" height="30" class="d-inline-block align-top mr-2">
             Meu Perfil--}}
           <span class="fas fa-user px-2">
@@ -57,8 +58,8 @@
             </button>
           
 
-             <button type="button" class="btn btn-light" id="ImageMeuLog">
-            <a class="btn btn-success" href="{{ route('login') }}">
+             <button type="button" class="btn btn-light" id="ImageMeuLog" style="width:10;height:10">
+            <a class="btn btn-primary btn-sm" href="{{ route('login') }}">
               {{-- <img src="img/imageLogin.png" width="30" height="30" class="d-inline-block align-top" id="ImageLogin">
              Login  --}}
              <span class="fas fa-sign-in-alt px-2">
@@ -69,7 +70,7 @@
 
 
                 <button type="button" class="btn btn-light" id="ImageMeuRegis">
-              <a class="btn btn-success" href="{{ route('register') }}">
+              <a class="btn btn-primary btn-sm" href="{{ route('register') }}">
                 {{-- <img src="img/imagemPerfil.png" width="30" height="30" class="d-inline-block align-top" id="ImageRegis">
                 Registrar conta--}}
               <span class="fas fa-user-plus px-2">
@@ -413,15 +414,15 @@
 
                           <div class="col-md-4 col-sm-6 col-xs-12">
                             <ul class="social-icons">
-                              <li><a class="facebook" href="https://www.facebook.com/bioextratus/"><i class="fa fa-facebook"></i>
+                              <li><a class="facebook" href="https://www.facebook.com/bioextratus/">
                                 <img  class ="redesimg" src="img/ImagemFacebook.jpg"></a></li>
-                                <li><a class="twitter" href="https://www.linkedin.com/in/bio-extratus-cosmetic-natural-ltda-918900159/"><i class="fa fa-linkedin"></i>
+                                 <li><a class="twitter" href="https://www.linkedin.com/in/bio-extratus-cosmetic-natural-ltda-918900159/">{{--<i class="fa fa-linkedin"></i> --}}
                                   <img class="redesimg" src="img/ImagemLinkedin.jpg"></a></li>
-                                  <li><a class="dribbble" href="https://www.instagram.com/bioextratus/?hl=pt-br"><i class="fa fa-instagram"></i>
+                                  <li><a class="dribbble" href="https://www.instagram.com/bioextratus/?hl=pt-br">
                                     <img class ="redesimg"src="img/ImagemInstagram.jpg" ></a></li>
-                                    <li><a class="youtube" href="https://www.youtube.com/bioextratusoficial"><i class="fa fa-youtube"></i>
+                                    <li><a class="youtube" href="https://www.youtube.com/bioextratusoficial">
                                       <img class="redesimg"src="img/ImagemYoutube.png"></a></li>
-                                      <li><a class="flickr" href="https://www.flickr.com/photos/bioextratus/"><i class="fa fa-flickr"></i>
+                                      <li><a class="flickr" href="https://www.flickr.com/photos/bioextratus/">
                                         <img class="redesimg"src="img/ImagemFlicker.png"></a></li>
                                       </ul>
                                     </div>
