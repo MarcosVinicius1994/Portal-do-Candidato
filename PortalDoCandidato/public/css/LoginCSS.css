@@ -36,7 +36,7 @@
 
 
 #HeaderId {
-    border-radius: 100%;
+    border-radius: 40%;
     background-color: dodgerblue;
     margin-top: -30px;
 
@@ -44,7 +44,20 @@
 
 
 
-
-/* #idcontainer {
-    background-color: rgb(173, 210, 216);
+/* 
+#idcontainer {
+    background-color: lightgreen !important;
+    i
 } */
+
+
+/* .idBODY {
+    background-color: 679966;
+} */
+
+.idBODY {
+    background-color: rgb(183, 206, 218);
+}
+
+;
+}

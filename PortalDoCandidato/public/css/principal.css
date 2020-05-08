@@ -163,3 +163,21 @@
         font-weight: 600
     }
 }
+
+
+/* .idBodyPrincipal {
+    background-color: rgb(183, 206, 218);
+} */
+
+
+#IdBuscar {
+    height: 35px;
+    width: 100px;
+}
+
+#idsobrenos {
+    width: 500px;
+    text-align: center;
+
+
+}

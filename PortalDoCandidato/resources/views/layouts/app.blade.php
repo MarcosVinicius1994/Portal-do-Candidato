@@ -21,7 +21,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body background="img/ImagemEstrutura.jpg">
+<body class="idBODY">
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container">

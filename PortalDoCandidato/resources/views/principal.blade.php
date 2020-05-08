@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   
 <link rel="stylesheet" href="css/principal.css">
   <link rel="stylesheet" href="css/redes.css">
@@ -21,7 +20,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  
   <script src="js/eventos.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -30,7 +30,7 @@
 
 
   </head>
-  <body>
+  <body class="idBodyPrincipal">
 
 
 
@@ -38,47 +38,47 @@
     <div class="pos-f-t">
 
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="navbar-brand" href="{{ url('/') }}">
-              <img src="img/ImagemBioextratus.png" width="130" height="50" class="d-inline-block align-top" alt="">
-            </a>
-          </li>
+          
+            
+         
         </ul>
 
-         
-        <ul class="navbar-nav ml-auto">
-          <button type="button" class="btn btn-light"  id="ImageMeuPerf">
-          <a class="btn btn-primary btn-sm" href="{{ route('login') }}">
-            {{-- <img src="img/imagemRegistrar.png" width="30" height="30" class="d-inline-block align-top mr-2">
-            Meu Perfil--}}
-          <span class="fas fa-user px-2">
-                <p class="ml-2">Meu Perfil</p></span></a></a> 
-            </button>
-          
 
-             <button type="button" class="btn btn-light" id="ImageMeuLog" style="width:10;height:10">
-            <a class="btn btn-primary btn-sm" href="{{ route('login') }}">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+ <a class="navbar-brand" href="{{ url('/') }}">
+              <img src="img/ImagemBioextratus.png" width="130" height="50" class="d-inline-block align-top" alt="">
+            </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <button type="button" class="btn btn-light" id="ImageMeuLog" style="width:10;height:10">
+            <a class="navbar-brand" href="{{ route('login') }}">
               {{-- <img src="img/imageLogin.png" width="30" height="30" class="d-inline-block align-top" id="ImageLogin">
              Login  --}}
              <span class="fas fa-sign-in-alt px-2">
-                <p class="ml-2">Login</p></span></a>
+               </span>
             </a>
              </button>
-            
-
-
-                <button type="button" class="btn btn-light" id="ImageMeuRegis">
-              <a class="btn btn-primary btn-sm" href="{{ route('register') }}">
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-light" id="ImageMeuRegis">
+              <a class="navbar-brand" href="{{ route('register') }}">
                 {{-- <img src="img/imagemPerfil.png" width="30" height="30" class="d-inline-block align-top" id="ImageRegis">
                 Registrar conta--}}
               <span class="fas fa-user-plus px-2">
-                <p class="ml-2">Registrar</p></span></a> 
+                {{-- <p class="ml-2">Registrar</p>  --}}</span></a>
                 </button>
-
-
-                <div class="btn-group ml-4" role="group" aria-label="Button group with nested dropdown" style ="width: -40px;">
+        
+      </li>
+      <li class="nav-item dropdown mt-2">
+        <div class="btn-group ml-4" role="group" aria-label="Button group with nested dropdown" style ="width: -40px;">
                   <div class="btn-group" role="group">
                     <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <img src="img/ImagemBrasil.png" width="40" height="30" class="d-inline-block align-top" alt="">
@@ -99,7 +99,19 @@
 
                           </div>
                         </div>
-                      </div></ul>
+                      </div>
+      </li>
+
+      
+      
+    </ul>
+    
+    
+  </div>
+</nav>
+
+         
+       
 
                       {{-- <ul class="nav nav-tabs">
                         <div class="ml-10">
@@ -115,25 +127,21 @@
                         </div>
                       </ul> --}}
 
-                    </nav>
+                   
                   </div>
 
 
 
                   <div class="container">
                     <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-                      <ol class="carousel-indicators">
+                      
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-
-                      </ol>
+                        
                       <div class="carousel-inner ">
 
                         <div class="carousel-item active">
                           <a href="https://loja.bioextratus.com.br">
-                            <img class="img-thumbnail d-block w-100" src="img/bg--bioextratus.jpg" alt="Primeiro Slide">
+                            <img class="img-thumbnail d-block w-100" src="img/ImagemEstrutura.jpg" alt="Primeiro Slide" style="height: 420px;">
                             <div class="carousel-caption d-none d-md-block">
                               <h1>Bio Extratus Cosmetic Natural LTDA</h1>
                               <h5>Seja também um de nossos colaboradores!!!</h5>
@@ -141,37 +149,6 @@
                           </a>
                         </div>
 
-                        <div class="carousel-item">
-                          <img class="img-thumbnail d-block w-100" src="img/siteBioextratus.jpg" alt="Segundo Slide">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h1>Bio Extratus Cosmetic Natural LTDA</h1>
-                            <h5>Seja também um de nossos colaboradores!!!</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img class="img-thumbnail d-block w-100" src="img/ImagemVisaoAmpla.jpg" alt="Terceiro Slide">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>Imagem Via Satelite</h5>
-                            <p>Primeira imagem</p>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img class="img-thumbnail d-block w-100" src="img/ImagemEstrutura.jpg" alt="Terceiro Slide">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>Imagem Estrutura</h5>
-                            <p>Primeira imagem</p>
-                          </div>
-                        </div>
-
-
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Anterior</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Próximo</span>
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -182,10 +159,10 @@
                   <div class = "container">
 
                     <div class ="row">
-                      <div class="col-6 col-md-4 " style="width: 10px">
+                      <div class="col-6 col-md-4 " style="width: 10px" >
                         <section class="section text-center" style="background: #f9f9f9">
-                          <div class="container mt-5">
-                            <h1>Sobre nós</h1>
+                          <div class="container mt-5" id="idsobrenos">
+                            <h1 class="mr-auto">Sobre nós</h1>
                             <br>
                             <div class="col-sm-8">
                               <p>
@@ -195,6 +172,7 @@
 
                         </section>
                       </div>
+                     
 
 
 
@@ -204,8 +182,12 @@
                         <ul>
 
                           <form class="form-inline mr-auto">
-                            <input class="form-control mr-sm-2" type="text" placeholder="" aria-label="Search">
-                            <button class="btn btn-dark btn-rounded btn-sm my-0" type="submit" id ="IdBuscar">Buscar</button>
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar vaga" aria-label="Search">
+                            <button class="btn btn-dark btn-rounded btn-sm my-0" type="submit" id ="IdBuscar">
+                              <h3 class="font-italic" style="font-size: 15px;"><strong><span class="fas fa-search mr-2"></span>Buscar</strong></h3>
+                            
+                              
+                            </button>
                           </form>
                         </ul>
                         <div id="accordion">
