@@ -181,3 +181,27 @@
 
 
 }
+
+.SOBRENOS {
+    text-align: center;
+    color: rgba(38, 38, 38, 0.8);
+    text-transform: none;
+    text-indent: 0px;
+    letter-spacing: normal;
+    font-family: open_sansregular, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    /* word-spacing: 10px; */
+    word-spacing: 2px;
+    widows: 2;
+    background-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0px;
+
+}
+
+
+.sobrenosspan {
+    color: rgb(51, 153, 102);
+    text-decoration: none;
+
+}

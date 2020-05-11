@@ -25,8 +25,6 @@
 
     margin-top: 200px;
 
-    border-radius: 10%;
-
 
 }
 
@@ -36,8 +34,8 @@
 
 
 #HeaderId {
-    border-radius: 40%;
-    background-color: dodgerblue;
+    border-top-style: solid;
+    background-color: aliceblue;
     margin-top: -30px;
 
 }
@@ -56,8 +54,24 @@
 } */
 
 .idBODY {
-    background-color: rgb(183, 206, 218);
+    background-color: #CDD7BC;
 }
 
-;
+#rowLogin {
+    background-color: #CDD7BC;
+    width: 600px;
+    height: 100px;
+
+
+}
+
+.ExtratusLogin {
+    /* width: 100px;
+    height: 400px; */
+    font-size: 50px;
+    color: green;
+}
+
+.BioLogin {
+    color: rgb(25, 61, 25);
 }

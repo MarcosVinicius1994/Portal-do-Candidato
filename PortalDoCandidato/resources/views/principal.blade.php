@@ -151,39 +151,43 @@
 
                       </div>
                     </div>
-                  </div>
+                    </div>
+                  
 
 
 
 
-                  <div class = "container">
-
-                    <div class ="row">
-                      <div class="col-6 col-md-4 " style="width: 10px" >
-                        <section class="section text-center" style="background: #f9f9f9">
-                          <div class="container mt-5" id="idsobrenos">
-                            <h1 class="mr-auto">Sobre nós</h1>
+                 
+ <div class="container">
+  
+                    <div class ="row justify-content-md-center" style="margin-top: 40px;">
+                            
                             <br>
-                            <div class="col-sm-8">
-                              <p>
-                              </p><p style="margin: 0px 0px 10px; text-align: justify; color: rgba(38, 38, 38, 0.8); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: open_sansregular, sans-serif; font-size: 15px; font-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><span style="margin: 2px 0px 10px; color: rgb(51, 153, 102); font-family: open_sansregular, sans-serif; text-decoration: none;"><strong style="margin: 0px; font-family: open_sansregular, sans-serif; font-weight: 700; text-decoration: none;">NOSSA RECEITA DE SUCESSO</strong></span><br style="margin: 0px; font-family: open_sansregular, sans-serif; text-decoration: none;">“Os nossos preciosos ingredientes são as pessoas que compõem a nossa empresa, funcionários, distribuidores e clientes. A relação honesta, bem sucedida e prazerosa que se estabeleceu entre a empresa e todos que a cercam e torna a Bio Extratus uma marca sólida, que continua sonhando e ousando para atingir as suas metas, com um enorme compromisso social e respeito ao meio-ambiente.”</p><p><br></p><p style="margin: 0px 0px 10px; text-align: justify; color: rgba(38, 38, 38, 0.8); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: open_sansregular, sans-serif; font-size: 15px; font-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><span style="margin: 2px 0px 10px; color: rgb(51, 153, 102); font-family: open_sansregular, sans-serif; text-decoration: none;"><strong style="margin: 0px; font-family: open_sansregular, sans-serif; font-weight: 700; text-decoration: none;">NOSSO MUITO OBRIGADO</strong></span><br style="margin: 0px; font-family: open_sansregular, sans-serif; text-decoration: none;">Pelo companheirismo, dedicação e vontade de vencer a cada dia, gostaríamos de agradecer a todos que nos cercam. Sem vocês, o sonho não se tornaria realidade.</p><p><br></p>      <p></p>
+                            <div class="col mr-auto">
+                              
+                              <p class ="SOBRENOS"><span  class="sobrenosspan"><strong style="margin: 0px; font-family: open_sansregular, sans-serif; font-weight: 700; text-decoration: none;">NOSSA RECEITA DE SUCESSO</strong></span>
+                                <br style="margin: 0px; font-family: open_sansregular, sans-serif; text-decoration: none;">“Os nossos preciosos ingredientes são as pessoas que compõem a nossa empresa, funcionários, distribuidores e clientes. A relação honesta, bem sucedida e prazerosa que se estabeleceu entre a empresa e todos que a cercam e torna a Bio Extratus uma marca sólida, que continua sonhando e ousando para atingir as suas metas, com um enorme compromisso social e respeito ao meio-ambiente.”</p>
+                              {{-- <p style="margin: 0px 0px 10px; text-align: justify; color: rgba(38, 38, 38, 0.8); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: open_sansregular, sans-serif; font-size: 15px; font-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><span style="margin: 2px 0px 10px; color: rgb(51, 153, 102); font-family: open_sansregular, sans-serif; text-decoration: none;"><strong style="margin: 0px; font-family: open_sansregular, sans-serif; font-weight: 700; text-decoration: none;">NOSSO MUITO OBRIGADO</strong></span><br style="margin: 0px; font-family: open_sansregular, sans-serif; text-decoration: none;">Pelo companheirismo, dedicação e vontade de vencer a cada dia, gostaríamos de agradecer a todos que nos cercam. Sem vocês, o sonho não se tornaria realidade.</p><p><br></p>      <p></p> --}}
                             </div>
                           </div>
 
-                        </section>
+                     
                       </div>
+                    
                      
 
 
 
-                      <div class="col-12 col-md-8 mt-5">
-                        <h1>Vagas abertas</h1>
+                      <div  class="container">
+                      <div class ="row justify-content-md-center" style="margin-top: 40px;">
+                        <div class="col">
+                       
                         {{-- Tipo acocordin --}}
                         <ul>
 
-                          <form class="form-inline mr-auto">
+                          <form class="form-inline ml-auto">
                             <input class="form-control mr-sm-2" type="text" placeholder="Buscar vaga" aria-label="Search">
-                            <button class="btn btn-dark btn-rounded btn-sm my-0" type="submit" id ="IdBuscar">
+                            <button class="btn btn-info btn-rounded btn-sm my-0" type="submit" id ="IdBuscar">
                               <h3 class="font-italic" style="font-size: 15px;"><strong><span class="fas fa-search mr-2"></span>Buscar</strong></h3>
                             
                               
@@ -194,7 +198,7 @@
 
                           <div class="card">
                             <div class="card-header" id="headingOne">
-                              <h5 class="mb-0">
+                              
                                 <h4>
                                   <a href="/">
                                     <span class="badge badge-light" >Vaga 1...</span>
@@ -232,7 +236,7 @@
                                     </div>
                                   </h4>
 
-                                </h5>
+                                
                               </div>
 
                               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
@@ -327,8 +331,11 @@
 
                           </div>
                         </div>
+                        <div class="col-md-auto"></div>
+                        <div class="col col-lg-2"></div>
                       </div>
-                    </div>
+                      </div>
+                    
 
 
 
